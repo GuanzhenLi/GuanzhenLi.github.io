@@ -6,7 +6,7 @@
         content="MVP-Bench">
   <meta name="keywords" content="MVP-Bench, Visual Perception, vision-language, LVLM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RLHF-V</title>
+  <title>MVP-Bench</title>
   <!-- Global site tag (gtag.js) - Google Analytics
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -421,15 +421,13 @@
     <!-- Paper Model. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3">Method</h2>
+        <h2 class="title is-3">An example</h2>
         <div class="content has-text-justified">
           <p>
-            <b>The proposed RLHF-V framework</b>:
+            <b>A sample of MVP-Bench</b>:
           </p>
           <p>
-            We collect <a href="https://huggingface.co/datasets/HaoyeZhang/RLHF-V-Hall_v0/tree/main">1.4k fine-grained dense feedback data</a> by asking human annotators to correct the hallucinated segments in model responses.
-
-            The training takes only 1 hour with 8 A100 GPUs to get <a href="https://huggingface.co/openbmb/RLHF-V_v0">RLHF-V-13B</a> which is initialized from our <a href="https://huggingface.co/Yirany/RLHF-V_v0_SFT/tree/main">RLHF-V_SFT-13B</a>.
+            A sample of MVP-Bench manifesting both high- and low-level visual perception. <I>Image 1</I> and <I>Image 2</I> form an image pair. Their different backgrounds indicate that the man is engaged in different behaviours. In terms of the question types, we design <b>Yes/No questions</b> and <b>Multiple-choice questions</b> for MVP-Bench. Besides, to investigate whether LVLMs can discern the manipulated content across an image pair, MVP-Bench contains both <b>single-image</b> tasks and <b>cross-image</b> tasks.
           </p>
           <ul>
             <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
@@ -438,7 +436,7 @@
 
           </ul>
         </div>
-        <img id="model" width="100%" src="images/rlhf-v_framework.jpg", alt="Illustration of the RLHF-V frmework">
+        <img id="sample" width="100%" src="images/Figure 1.png", alt="A sample of MVP-Bench">
        <!--  <h3 class="subtitle has-text-centered">
           <p style="font-family:Times New Roman"></p>
         </h3> -->
