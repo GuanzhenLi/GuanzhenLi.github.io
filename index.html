@@ -6,6 +6,7 @@
         content="MVP-Bench">
   <meta name="keywords" content="MVP-Bench, Visual Perception, vision-language, LVLM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
   <title>MVP-Bench</title>
   <!-- Global site tag (gtag.js) - Google Analytics
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -454,16 +455,12 @@
         <br>
         <div class="content has-text-justified">
           <p>
-            <b>Low hallucination rate while being informative</b>:
+            Perception related to <b>humans</b> normally requires more significant cognitive process <b>at both perception levels</b>, such as misinformation understanding and emotion recognition. To assess LVLMs' multi-level visual perception, MVP-Bench consists of images containing humans for ensuring that perception at both levels are engaged while understanding the cases.
+            
+            We define 5 high-level (L<sub>h</sub>) perception categories and 13 low-level (L<sub>l</sub>) categories. The mapping relationship between two levels indicates that certain low-level perception can support the hig-level perception.
           </p>
-          <ul>
-            <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
-            <li>It uses a single text encoder for all text corpus, ranging from class concepts, referring phrases to image captions.</li>
-            <li>It decouples image and text encoder to accomadate cross-image tasks (e.g., image-text retrieval) and within-image tasks (e.g., segmentation and captioning).</li> -->
-
-          </ul>
         </div>
-        <img id="model" width="80%" src="images/rlhf-v-main_exp.jpg" alt="Main experimental results of RLHF-V">
+        <img id="definition" width="100%" src="static/images/Definition.jpg" alt="Definition of High- and Low-level visual perception in MVP-Bench.">
        <!--  <h3 class="subtitle has-text-centered">
           <p style="font-family:Times New Roman"></p>
         </h3> -->
