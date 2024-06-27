@@ -491,6 +491,7 @@
               <li>Single-Image: Questions querying on one of a pair of images. The questions include Yes/No questions (denoted as Yes/No) and Multiple-choice questions (denoted as MCQ).</li>
               <li>Cross-Image: Questions asking about the differences between a pair of images. These questions are Multiple-choice questions (denoted as Cross-Image), and the options are five of the defined high-level visual perception categories or low-level categories.</li>
               <li><I>L<sub>h</sub></I>, <I>L<sub>l</sub></I>, and <I>L<sub>m</sub></I>: <I>L<sub>h</sub></I> refers to the questions at high perception level; <I>L<sub>l</sub></I> refers to the questions at low perception level; <I>L<sub>m</sub></I> demonstrates LVLMs' overall mutli-level performance.</li>
+              <li>M, N, and M+N: M refers to LVLMs' performance on Manipulated images; N refers to LVLMs' performance on Natural images; M+N demonstrates LVLMs' overall performance on both Natural images and Manipulated images.</li>
             </ul>
           </p>
           
@@ -702,7 +703,7 @@
                   <th rowspan="2" colspan="1">MCQ</th>
                 </tr>
                 <tr class="secondHead">
-                  <th rowspan="1" colspan="3"><I>qAcc</I></th>
+                  <th rowspan="1" colspan="3"><I>iAcc</I></th>
                   <th rowspan="1" colspan="3"><I>aAcc</I></th>
                   <th rowspan="1" colspan="1"><I>mAcc</I></th>
                 </tr>
@@ -872,12 +873,6 @@
     <h2 class="title is-3">BibTeX</h2>
     </div>
     <pre><code>
-@article{2023rlhf-v,
-  author      = {Tianyu Yu and Yuan Yao and Haoye Zhang and Taiwen He and Yifeng Han and Ganqu Cui and Jinyi Hu and Zhiyuan Liu and Hai-Tao Zheng and Maosong Sun and Tat-Seng Chua},
-  title       = {RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from Fine-grained Correctional Human Feedback},
-  journal      = {arxiv},
-  year         = {2023},
-}
 </code></pre>
   </div>
   <br>
@@ -888,7 +883,7 @@
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3">Examples</h2>
+      <h2 class="title is-3">Case Analysis</h2>
     </div>
   </div>
   <!--/ Results. -->
@@ -911,10 +906,10 @@
       <div class="column is-six-fifths">
         <div class="content has-text-justified">
           <ul>
-            <li><b>Short-form QA</b>: RLHF-V can give a more trustworthy answer in short-form QA.</li>
+            <li><b>GPT-4V shows rigorous behaviours in High-Level Perception tasks.</b></li>
           </ul>
         </div>
-        <!-- <img src="demos/case1.png" width="90%" alt=""> -->
+        <img src="static/images/case1.png" width="90%" alt="">
         <div class="content has-text-justified">
           <ul>
             <li><b>Long-form QA</b>: RLHF-V can generate informative image description with less hallucinations.</li>
