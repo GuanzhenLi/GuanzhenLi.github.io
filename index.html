@@ -320,16 +320,16 @@
             Humans perform visual perception at multiple levels, including <b>low-level</b> object recognition and <b>high-level</b> semantic interpretation such as behavior understanding. <b>Subtle differences in low-level details</b> can lead to <b>substantial changes in high-level perception</b>. Despite significant advancements in various multimodal tasks, Large Visual Language Models (LVLMs) remain unexplored in their capabilities to conduct such <b>multi-level visual perceptions</b>. We introduce the <b>MVP-Bench</b> to investigate the <b>perception gap</b> btween <b>LVLMs</b> and <b>humans</b>.
             <ul>
               <li>
-                <b style="font-family:Arial, Helvetica, sans-serif">Fine-Grained and Diverse Human Preference Data</b>: <span style="font-size: 95%;">We collect 1.4K fine-grained human feedback consisting of 3.7k pieces of segment-level corrections, covering hallucination types including objects (41.2%), positions (20.3%), numbers (16.5%), attributes (10%), actions (5.3%), and others (6.8%).</span>
+                <b style="font-family:Arial, Helvetica, sans-serif">The uniqness of MVP-Bench</b>: <span style="font-size: 95%;">MVP-Bench is the first visual-language benchmark systematically evaluating both low- and high-level visual perception of LVLMs. We construct MVP-Bench with image pairs consisting with a natural image and a corresponding manipulated image to investigate how manipulated content influences the models' perception. MVP-Bench contains 520 image pairs and 1872 questions at both perception levels.</span>
               </li>
               <li>
-                <b style="font-family:Arial, Helvetica, sans-serif">High Data Efficiency and Scalability</b>: <span style="font-size: 95%;">With just 1.4K annotated data, we achieve a 34.8% reduction in model hallucinations. Moreover, the decrease in hallucinations becomes more significant as more data used.</span>
+                <b style="font-family:Arial, Helvetica, sans-serif">Experiments</b>: <span style="font-size: 95%;">With MVP-Bench, we diagnose the visual perception of <b>10 open-source</b> and <b>2 closed-source</b> LVLMs and analyze the results by comparing their various performance <b>across two levels</b> and <b>across each image pair</b>.</span>
               </li>
               <li>
-                <b style="font-family:Arial, Helvetica, sans-serif">Enhanced Performance and Computational Efficiency</b>: <span style="font-size: 95%;">Our fine-grained correctional human feedback data can better credit the desired behavior, allowing efficient training in 1 hour on 8 A100 GPUs to achieve promising results.</span>
+                <b style="font-family:Arial, Helvetica, sans-serif">Performance at difference perception levels</b>: <span style="font-size: 95%;">High-level perception tasks are <b>significantly more challenging</b> than low-level tasks for existing LVLMs. The <b>state-of-the-art</b> <a href="https://openai.com/index/hello-gpt-4o/">GPT-4o</a> only achieves an accuracy of <b>56%</b> on Yes/No questions, compared with <b>74%</b> in low-level scenarios.</span>
               </li>
               <li>
-                <b style="font-family:Arial, Helvetica, sans-serif">Outstanding Trustworthiness without Compromising Helpfulness</b>: <span style="font-size: 95%;">Our model surpasses existing open-source MLLMs in reducing hallucination rates, mitigates hallucination from over-generalization, and maintains informativeness. Surprisingly, RLHF-V is even more resistant to the over-generalization problem compared with <a href="https://openai.com/research/gpt-4v-system-card">GPT-4V</a>.</span>
+                <b style="font-family:Arial, Helvetica, sans-serif">Comparison between {natural, manipulated} images</b>: <span style="font-size: 95%;">LVLMs generally perform <b>better on natural images</b> compared to manipulated images. The performance gap indicates that current LVLMs <b>do not generalize</b> in understanding the visual semantics of synthetic images as humans do.</span>
               </li>
             </ul>
 <!--             <br>
