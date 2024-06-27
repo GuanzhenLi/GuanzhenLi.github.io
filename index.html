@@ -494,6 +494,19 @@
               <li>M, N, and M+N: M refers to LVLMs' performance on Manipulated images; N refers to LVLMs' performance on Natural images; M+N demonstrates LVLMs' overall performance on both Natural images and Manipulated images.</li>
             </ul>
           </p>
+
+          <p>
+            <b>Metrics</b>:
+          </p>
+          <p>
+            <ul>
+              <li><I>qAcc</I>: Accuracy based on questions. With the image pair setting in MVP-Bench, we ask the same Yes/No question to a pair of images respectively. <I>qAcc</I> regards a case correct only if the model answers the question according to both images correctly.</li>
+              <li><I>iAcc</I>: Accuracy based on images. In MVP-Bench, we design multiple Yes/No questions (at different levels) for each image. <I>iAcc</I> considers an image correct only if the model answers all the questions of an image correctly.</li>
+              <li><I>aAcc</I>: Accuracy based on single quesion--image pair. As long as the model answers an Yes/No question of a single image correctly, <I>iAcc</I> regards this case as correct.</li>
+              <li>Multiple-choice questions' evaluation: To mitigate the bias of the option order, we adopt the Circular Strategy from [MMBench](https://github.com/open-compass/MMBench) to evaluate the Single-Image and Cross-Image multiple-choice questions.</li>
+              <li>We highlight the <font color="#FF0000">problematic</font> results (&it;5%) and best performance across <b>all models</b> and on <u>open-source</u> models only.</li>
+            </ul>
+          </p>
           
         </div>
 
